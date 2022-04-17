@@ -14533,7 +14533,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[103]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Importing all required libraries</span>
@@ -14551,7 +14551,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[104]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">randomized_matrix_mul</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">sampling_type</span> <span class="o">=</span> <span class="s1">&#39;non-uniform&#39;</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="o">-</span><span class="mi">9999</span><span class="p">):</span>
@@ -14591,7 +14591,6 @@ a.anchor-link {
 
     <span class="c1"># Getting the product of all chosen rank-1 matrices </span>
     <span class="n">ans</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">((</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">pk</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">r</span><span class="p">))</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">outer</span><span class="p">(</span><span class="n">A</span><span class="p">[:,</span><span class="n">k</span><span class="p">],</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">,:])</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">index_range</span><span class="p">)</span>
-    
     <span class="k">return</span> <span class="n">ans</span>
 </pre></div>
 
@@ -14608,7 +14607,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[105]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Loading A and B from the CSV files</span>
@@ -14624,7 +14623,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[106]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">mul_error</span><span class="p">(</span><span class="n">approximate</span><span class="p">,</span> <span class="n">actual</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">):</span>
@@ -14638,7 +14637,7 @@ a.anchor-link {
 <span class="sd">    Returns:</span>
 <span class="sd">        _type_: float</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">approximate</span> <span class="o">-</span> <span class="n">actual</span><span class="p">,</span> <span class="nb">ord</span> <span class="o">=</span> <span class="s1">&#39;fro&#39;</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="nb">ord</span> <span class="o">=</span> <span class="s1">&#39;fro&#39;</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="nb">ord</span> <span class="o">=</span> <span class="s1">&#39;fro&#39;</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">approximate</span> <span class="o">-</span> <span class="n">actual</span><span class="p">,</span> <span class="nb">ord</span> <span class="o">=</span> <span class="s1">&#39;fro&#39;</span><span class="p">)</span><span class="o">/</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="nb">ord</span> <span class="o">=</span> <span class="s1">&#39;fro&#39;</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="nb">ord</span> <span class="o">=</span> <span class="s1">&#39;fro&#39;</span><span class="p">)))</span>
 </pre></div>
 
      </div>
@@ -14651,10 +14650,10 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h4 id="c.-Calculate-approximation-error-of-the-matrix-multiplication">c. Calculate approximation error of the matrix multiplication<a class="anchor-link" href="#c.-Calculate-approximation-error-of-the-matrix-multiplication">&#182;</a></h4>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[107]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calling the functions required</span>
@@ -14669,11 +14668,73 @@ a.anchor-link {
     <span class="n">approximate</span> <span class="o">=</span> <span class="n">randomized_matrix_mul</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">r</span> <span class="o">=</span> <span class="n">col_val</span><span class="p">,</span> <span class="n">sampling_type</span> <span class="o">=</span> <span class="s1">&#39;non-uniform&#39;</span><span class="p">)</span>
     <span class="n">e</span> <span class="o">=</span> <span class="n">mul_error</span><span class="p">(</span><span class="n">approximate</span><span class="p">,</span> <span class="n">actual</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span>
     <span class="n">errors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+<span class="c1"># importing the required libraries</span>
+<span class="kn">from</span> <span class="nn">texttable</span> <span class="kn">import</span> <span class="n">Texttable</span>
+<span class="kn">import</span> <span class="nn">latextable</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">Texttable</span><span class="p">()</span>
+
+<span class="c1"># Creating a table for displaying the values</span>
+<span class="n">table</span><span class="o">.</span><span class="n">set_cols_dtype</span><span class="p">([</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">])</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;Rank&#39;</span><span class="p">,</span> <span class="s1">&#39;Error&#39;</span><span class="p">]]</span> <span class="o">+</span> <span class="p">[[</span><span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">errors</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">errors</span><span class="p">))]</span>
+<span class="n">table</span><span class="o">.</span><span class="n">add_rows</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">draw</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">latextable</span><span class="o">.</span><span class="n">draw_latex</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">caption</span> <span class="o">=</span> <span class="s2">&quot;R vs Error obtained&quot;</span><span class="p">))</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>+---------+-------+
+|  Rank   | Error |
++=========+=======+
+| 20.000  | 0.207 |
++---------+-------+
+| 50.000  | 0.116 |
++---------+-------+
+| 100.000 | 0.097 |
++---------+-------+
+| 200.000 | 0.075 |
++---------+-------+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|l|l|}
+			\hline
+			Rank &amp; Error \\
+			\hline
+			20.000 &amp; 0.207 \\
+			\hline
+			50.000 &amp; 0.116 \\
+			\hline
+			100.000 &amp; 0.097 \\
+			\hline
+			200.000 &amp; 0.075 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{R vs Error obtained}
+\end{table}
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14684,7 +14745,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[108]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Visualizing the errors obtained from the random multiplication</span>
@@ -14737,7 +14798,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[109]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">power_iteration</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">eps</span> <span class="o">=</span> <span class="mf">1e-6</span><span class="p">,</span> <span class="n">maxiter</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
@@ -14775,7 +14836,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[110]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Implementing the driver code given in the power_sim.py file </span>
@@ -14824,6 +14885,370 @@ a.anchor-link {
 
 </div>
 
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Question-6">Question 6<a class="anchor-link" href="#Question-6">&#182;</a></h1><p>Implementing the sketched OLS</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[111]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="kn">import</span> <span class="nn">scipy.sparse</span>
+<span class="kn">import</span> <span class="nn">sympy.discrete</span> <span class="k">as</span> <span class="nn">sym</span>
+<span class="kn">from</span> <span class="nn">numba</span> <span class="kn">import</span> <span class="n">jit</span>
+<span class="kn">import</span> <span class="nn">time</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[119]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Improving the speed of execution by using numba</span>
+<span class="nd">@jit</span><span class="p">(</span><span class="n">nopython</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">sketchify</span><span class="p">(</span><span class="n">D</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Summary:</span>
+<span class="sd">    For a given matrix runs all the necessary information and returns the sketch matrix</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        D (np.matrix): matrix to be transformed</span>
+<span class="sd">    </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        D: Applies a FHWT transform on the given matrix</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Implementing the Fast Walsh Hadamard Transform (From Wikipedia)</span>
+    <span class="k">def</span> <span class="nf">fwht</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;In-place Fast Walsh–Hadamard Transform of array a.&quot;&quot;&quot;</span>
+        <span class="n">h</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">while</span> <span class="n">h</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">h</span> <span class="o">*</span> <span class="mi">2</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="n">h</span><span class="p">):</span>
+                    <span class="n">x</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+                    <span class="n">y</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="n">h</span><span class="p">]</span>
+                    <span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+                    <span class="n">a</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="n">h</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
+            <span class="n">h</span> <span class="o">*=</span> <span class="mi">2</span>
+        <span class="k">return</span> <span class="n">a</span>
+    
+    <span class="c1"># Getting n </span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">D</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    
+    <span class="c1"># Getting the sketch matrix</span>
+    <span class="k">return</span> <span class="n">fwht</span><span class="p">(</span><span class="n">D</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    
+
+<span class="k">def</span> <span class="nf">sketched_ols</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">eps</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Summary: </span>
+<span class="sd">    Function to implement the sketched OLS method</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        X ( np.matrix): Covariates for the given data</span>
+<span class="sd">        y (np.matrix): Response vector</span>
+<span class="sd">        eps (float): Error term used in determing &#39;r&#39; columns to be sampled</span>
+<span class="sd">    </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        beta (np.matrix): Estimated coefficients</span>
+<span class="sd">        time (float): endTime - startTime : Time taken to run the algorithm</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="c1"># Checking for the dimensions of the input matrices</span>
+    <span class="k">if</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;X and y must have the same number of rows&#39;</span><span class="p">)</span>
+    
+    <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">920211348</span><span class="p">)</span>
+    <span class="c1"># Assigning n  &amp; d </span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    
+    <span class="n">r</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">d</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">/</span><span class="n">eps</span><span class="p">)</span>
+    
+    <span class="c1"># Getting the S matrix </span>
+    <span class="n">s</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="c1"># columnar constant </span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="n">r</span><span class="p">)</span>
+    
+    <span class="n">row</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">col</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># Generating the subsample matrix S</span>
+    <span class="k">for</span> <span class="nb">iter</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">r</span><span class="p">):</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">row</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="n">col</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">iter</span><span class="p">)</span>
+        
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>  
+    
+    <span class="c1"># Using the sparse matrix to generate the S matrix and avoid memory errors    </span>
+    <span class="n">S</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">sparse</span><span class="o">.</span><span class="n">csc_matrix</span><span class="p">((</span><span class="n">data</span><span class="p">,(</span><span class="n">row</span><span class="p">,</span><span class="n">col</span><span class="p">)),</span> <span class="n">shape</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">r</span><span class="p">))</span>
+    
+    <span class="c1"># Creating the diagonal matrix D</span>
+    <span class="n">D</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">size</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span><span class="p">,),</span> <span class="n">replace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+    
+    <span class="c1"># Sketch of X</span>
+    <span class="n">sx</span> <span class="o">=</span> <span class="n">sketchify</span><span class="p">(</span><span class="n">D</span><span class="o">*</span><span class="n">X</span><span class="p">)</span>
+    
+    <span class="c1"># Sketch of y</span>
+    <span class="n">sy</span> <span class="o">=</span> <span class="n">sketchify</span><span class="p">(</span><span class="n">D</span><span class="o">*</span><span class="n">y</span><span class="p">)</span>
+    
+    <span class="c1"># Divinding the final multiplication into 2 steps</span>
+    <span class="c1"># Start time for a given eps </span>
+    <span class="n">startTime</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="n">component_1</span> <span class="o">=</span> <span class="n">S</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">sx</span>
+    <span class="n">component_2</span> <span class="o">=</span> <span class="n">S</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">sy</span>
+
+    <span class="c1"># Calculating the final matrix ie. the estimates</span>
+    <span class="n">bs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">component_1</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">component_1</span><span class="p">)</span> <span class="o">@</span> <span class="n">component_1</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">component_2</span>
+    
+    <span class="c1"># End time for a given eps</span>
+    <span class="n">endTime</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    
+    <span class="c1"># Returning the final estimates and the time taken</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">bs</span><span class="p">,(</span><span class="n">endTime</span><span class="o">-</span><span class="n">startTime</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[120]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Constant defined in the problem </span>
+<span class="n">z</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="mi">20</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">920211348</span><span class="p">)</span>
+<span class="c1"># getting X and y matrix </span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span> 
+
+<span class="c1"># Apply the sketched OLS method for all given errors</span>
+<span class="n">eps</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.05</span><span class="p">,</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.001</span><span class="p">]</span>
+<span class="n">estimated_betas</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">computation_times</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">eps</span><span class="p">)</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">eps</span><span class="p">:</span>
+    <span class="n">estimated_betas</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)],</span><span class="n">computation_times</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">sketched_ols</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">e</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[121]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">startTime</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+<span class="n">computing_actual_betas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">X</span><span class="p">)</span> <span class="o">@</span> <span class="n">X</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">y</span>
+<span class="n">endTime</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+<span class="n">actual_time</span> <span class="o">=</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[122]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">actual_time</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[122]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0.19479012489318848</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[123]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">computation_times</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[123]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[0.0032143592834472656,
+ 0.004021644592285156,
+ 0.012020349502563477,
+ 0.07588529586791992]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[124]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">errors</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">e</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="n">estimated_betas</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">errors</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">computing_actual_betas</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[125]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">table_2</span> <span class="o">=</span> <span class="n">Texttable</span><span class="p">()</span>
+
+<span class="n">table_2</span><span class="o">.</span><span class="n">set_cols_dtype</span><span class="p">([</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">])</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;Epsilon&#39;</span><span class="p">,</span> <span class="s1">&#39;Error ||estimate - actual||2&#39;</span><span class="p">,</span><span class="s1">&#39;Computation Times&#39;</span><span class="p">,</span><span class="s1">&#39;% Improvement&#39;</span><span class="p">]]</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="p">[</span><span class="n">e</span><span class="p">,</span><span class="n">error</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="s2">&quot;</span><span class="si">{:.3f}</span><span class="s2">%&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">((</span><span class="n">actual_time</span><span class="o">-</span><span class="n">t</span><span class="p">)</span><span class="o">/</span><span class="n">t</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)]</span> <span class="k">for</span> <span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="n">error</span><span class="p">),</span><span class="n">t</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">errors</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span><span class="n">computation_times</span><span class="p">)]</span>
+<span class="n">table_2</span><span class="o">.</span><span class="n">add_rows</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">table_2</span><span class="o">.</span><span class="n">draw</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">latextable</span><span class="o">.</span><span class="n">draw_latex</span><span class="p">(</span><span class="n">table_2</span><span class="p">,</span> <span class="n">caption</span> <span class="o">=</span> <span class="s2">&quot;Epsilon vs Error obtained&quot;</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>+---------+------------------------------+-------------------+---------------+
+| Epsilon | Error ||estimate - actual||2 | Computation Times | % Improvement |
++=========+==============================+===================+===============+
+| 0.100   | 0.733                        | 0.003             | 5959.999%     |
++---------+------------------------------+-------------------+---------------+
+| 0.050   | 0.002                        | 0.004             | 4743.544%     |
++---------+------------------------------+-------------------+---------------+
+| 0.010   | 0.026                        | 0.012             | 1520.503%     |
++---------+------------------------------+-------------------+---------------+
+| 0.001   | 0.000                        | 0.076             | 156.690%      |
++---------+------------------------------+-------------------+---------------+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+			Epsilon &amp; Error ||estimate - actual||2 &amp; Computation Times &amp; % Improvement \\
+			\hline
+			0.100 &amp; 0.733 &amp; 0.003 &amp; 5959.999% \\
+			\hline
+			0.050 &amp; 0.002 &amp; 0.004 &amp; 4743.544% \\
+			\hline
+			0.010 &amp; 0.026 &amp; 0.012 &amp; 1520.503% \\
+			\hline
+			0.001 &amp; 0.000 &amp; 0.076 &amp; 156.690% \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Epsilon vs Error obtained}
+\end{table}
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div>
